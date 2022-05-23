@@ -8,4 +8,4 @@
 // type First<T extends any[]> = T['length'] extends 0 ? never : T[0];
 
 // 4
-type First<T extends any[]> = T extends [infer First, ... infer Other] ? First : never;
+type First<T extends any[]> = T extends [infer First, ... infer Other] ? First : never
