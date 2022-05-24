@@ -1,2 +1,2 @@
-# -type-challenges
+# type-challenges
 Collection of TypeScript type challenges
