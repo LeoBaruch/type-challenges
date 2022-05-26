@@ -1,0 +1,1 @@
+type MyParameters<T extends Function> = T extends (...args: infer Args) => infer Return ? Args : never;
