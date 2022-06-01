@@ -1,0 +1,1 @@
+type Last<T extends unknown[]> = T extends [...infer R, infer L] ? L : undefined;
