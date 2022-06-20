@@ -1,0 +1,1 @@
+type MyCapitalize<T extends string> = T extends `${infer P}${infer M}` ? `${Uppercase<P>}${M}` : Capitalize<T>;
