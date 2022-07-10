@@ -7,3 +7,13 @@ type cases = [
   Expect<Equal<Permutation<boolean>, [false, true] | [true, false]>>,
   Expect<Equal<Permutation<never>, []>>,
 ]
+
+
+// about generic type: never
+type P<T> = T extends never ? true : false;
+type A1 = P<never> //never 
+type A2 = P<any> //boolean 
+
+type Q<T> = [T] extends [never] ? true : false;
+type B1 = Q<never> //true
+type B2 = Q<any> //false
