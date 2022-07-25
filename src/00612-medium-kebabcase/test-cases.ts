@@ -10,4 +10,5 @@ type cases = [
   Expect<Equal<KebabCase<'-'>, '-'>>,
   Expect<Equal<KebabCase<''>, ''>>,
   Expect<Equal<KebabCase<'😎'>, '😎'>>,
+  Expect<Equal<KebabCase<'Y'>, 'y'>>,
 ]
