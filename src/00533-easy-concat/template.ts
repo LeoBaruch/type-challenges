@@ -1,1 +1,1 @@
-type Concat<T extends unknown[], P extends unknown[]> = [...T, ...P]
+type Concat<T extends any[], P extends any[]> = [...T, ...P]
